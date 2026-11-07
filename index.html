@@ -20,7 +20,7 @@
 <main>
 
 <h1>Aquarym — Politique de confidentialité</h1>
-<p class="maj">Dernière mise à jour : 11 octobre 2026 · Application Android et Windows « Aquarym » (identifiant <code>app.aquarym</code>)</p>
+<p class="maj">Dernière mise à jour : 7 novembre 2026 · Application Android et Windows « Aquarym » (identifiant <code>app.aquarym</code>)</p>
 
 <h2>1. Qui est responsable de vos données ?</h2>
 <p>Le responsable du traitement est <strong>Vincent Derieu</strong>, développeur indépendant (particulier), France.<br>
@@ -32,6 +32,7 @@ Contact : <a href="mailto:derieu.vincent@outlook.com">derieu.vincent@outlook.com
   <li>Aquarym ne contient <strong>aucune publicité</strong>, <strong>aucun outil de statistiques ou de suivi</strong> et <strong>aucun rapport de plantage automatique</strong>.</li>
   <li>Vos données ne sont <strong>jamais vendues</strong> ni utilisées à des fins publicitaires.</li>
   <li>Vous pouvez sauvegarder et transférer vos données par fichier XML, sans compte.</li>
+  <li>Les rappels d'entretien et le récapitulatif quotidien sont calculés et programmés <strong>sur votre appareil</strong> : aucune notification ne passe par un serveur.</li>
 </ul>
 
 <h2>3. Quelles données sont traitées, et pourquoi ?</h2>
@@ -39,11 +40,12 @@ Contact : <a href="mailto:derieu.vincent@outlook.com">derieu.vincent@outlook.com
   <tr><th>Situation</th><th>Données</th><th>Finalité</th></tr>
   <tr>
     <td>Création d'un compte (facultatif)</td>
-    <td>Adresse e-mail et mot de passe (conservé sous forme chiffrée), ou, si vous vous connectez avec Google, l'identifiant, l'adresse e-mail et le nom de votre compte Google.</td>    <td>Vous authentifier, confirmer votre adresse, réinitialiser votre mot de passe.</td>
+    <td>Adresse e-mail et mot de passe (conservé sous forme chiffrée), ou, si vous vous connectez avec Google, l'identifiant, l'adresse e-mail et le nom de votre compte Google.</td>
+    <td>Vous authentifier, confirmer votre adresse, réinitialiser votre mot de passe.</td>
   </tr>
   <tr>
     <td>Aquarym Plus : synchronisation entre appareils</td>
-    <td>Vos données d'aquariums : locaux, racks, niveaux, aquariums, matériel, occupants, mesures d'eau, journal, dépenses et revenus, configurations générées ; ainsi que les photos d'aquariums et de locaux que vous ajoutez.</td>
+    <td>Vos données d'aquariums : locaux, racks, niveaux, aquariums (y compris les paramètres d'eau suivis et le suivi de la mise en eau), matériel, occupants, mesures d'eau, journal (dont les décès et reproductions notés), rappels d'entretien, périodes d'absence du mode vacances, filtres d'espèces enregistrés, espèces personnalisées, dépenses et revenus, configurations générées ; ainsi que les photos d'aquariums et de locaux que vous ajoutez.</td>
     <td>Retrouver vos données sur plusieurs appareils et les sauvegarder.</td>
   </tr>
   <tr>
@@ -53,7 +55,7 @@ Contact : <a href="mailto:derieu.vincent@outlook.com">derieu.vincent@outlook.com
   </tr>
   <tr>
     <td>Signalement d'une espèce absente</td>
-    <td>Les informations de signalement que vous saisissez.</td>
+    <td>Les informations de signalement que vous saisissez (nom de l'espèce, note facultative) et la version de l'application. Aucune photo.</td>
     <td>Enrichir la bibliothèque d'espèces.</td>
   </tr>
   <tr>
@@ -63,8 +65,13 @@ Contact : <a href="mailto:derieu.vincent@outlook.com">derieu.vincent@outlook.com
   </tr>
   <tr>
     <td>Formulaire de contact</td>
-    <td>Votre adresse e-mail et votre message.</td>
+    <td>Votre adresse e-mail, le sujet et votre message ; ainsi que des informations techniques ajoutées automatiquement pour faciliter le diagnostic : version de l'application, système d'exploitation et sa version, modèle de l'appareil, langue, et identifiant de votre compte si vous êtes connecté.</td>
     <td>Vous répondre.</td>
+  </tr>
+  <tr>
+    <td>Carte du monde, bibliothèque d'espèces et photos</td>
+    <td>Données techniques de connexion (adresse IP, identification de l'application) transmises aux serveurs qui fournissent le fond de carte, la bibliothèque et ses photos, comme pour toute requête sur Internet. Aucune donnée de compte n'y est associée.</td>
+    <td>Afficher la carte et mettre à jour la bibliothèque. Ces données ne sont pas utilisées pour vous identifier.</td>
   </tr>
 </table>
 <p>Les bases légales sont l'exécution du service que vous demandez (compte, synchronisation, abonnement, reconnaissance), mon intérêt légitime à protéger le service contre les abus (quotas), et votre consentement pour l'envoi volontaire d'une photo à reconnaître.</p>
@@ -74,10 +81,13 @@ Contact : <a href="mailto:derieu.vincent@outlook.com">derieu.vincent@outlook.com
   <tr><th>Prestataire</th><th>Rôle</th><th>Localisation</th></tr>
   <tr><td>Supabase</td><td>Authentification, base de données, stockage des photos, fonctions serveur</td><td>Union européenne</td></tr>
   <tr><td>Brevo</td><td>Envoi des e-mails d'authentification (confirmation, mot de passe oublié)</td><td>Union européenne</td></tr>
-  <tr><td>Google</td><td>Google Play (achat et abonnement), connexion avec Google si vous l'utilisez</td><td>Selon les conditions de Google</td></tr>
+  <tr><td>Google</td><td>Google Play (achat et abonnement, proposition de mise à jour, demande d'avis), connexion avec Google si vous l'utilisez</td><td>Selon les conditions de Google</td></tr>
+  <tr><td>Fondation OpenStreetMap</td><td>Fond de la carte du monde (tuiles cartographiques)</td><td>Royaume-Uni</td></tr>
   <tr><td>Anthropic (modèle Claude)</td><td>Analyse de la photo soumise à la reconnaissance d'espèce</td><td>États-Unis</td></tr>
 </table>
-<p>Seule la reconnaissance par photo implique un transfert hors de l'Union européenne, vers Anthropic. Ce transfert est encadré par les garanties contractuelles du prestataire (clauses contractuelles types). La photo est transmise uniquement au moment où vous lancez l'identification, et n'est pas conservée par Aquarym.</p>
+<p>Le fond de carte est fourni depuis le Royaume-Uni, qui bénéficie d'une décision d'adéquation de la Commission européenne ; il ne reçoit que des données techniques de connexion. La reconnaissance par photo implique un transfert hors de l'Union européenne, vers Anthropic. Ce transfert est encadré par les garanties contractuelles du prestataire (clauses contractuelles types). La photo est transmise uniquement au moment où vous lancez l'identification, et n'est pas conservée par Aquarym.</p>
+
+<p>L'application propose aussi des liens vers des services externes, ouverts seulement si vous le choisissez : la page de don Ko-fi et la fiche Google Play pour laisser un avis. Ces services appliquent leur propre politique de confidentialité.</p>
 
 <h2>5. Combien de temps vos données sont-elles conservées ?</h2>
 <ul>
